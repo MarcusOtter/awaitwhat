@@ -23,10 +23,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore -c Release
+      run: dotnet build src --no-restore -c Release
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test src --no-build --verbosity normal
     - name: Publish the package to nuget.org
-      run: dotnet nuget push */bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push src/**/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
       env:
         NUGET_AUTH_TOKEN: ${{ secrets.NUGET_TOKEN }}
