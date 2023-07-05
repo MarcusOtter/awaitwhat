@@ -27,6 +27,6 @@ jobs:
     - name: Test
       run: dotnet test src --no-build --verbosity normal -c Release
     - name: Publish the package to nuget.org
-      run: dotnet nuget push **/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push **/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json --skip-duplicate
       env:
         NUGET_AUTH_TOKEN: ${{ secrets.NUGET_TOKEN }}
