@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <Authors>LeMorrow</Authors>
+        <Description>AwaitWhat lets you await strings that contain a TimeSpan in natural english (e.g. await "2 seconds").</Description>
+        <PackageProjectUrl>https://github.com/MarcusOtter/awaitwhat</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/MarcusOtter/awaitwhat/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/MarcusOtter/awaitwhat</RepositoryUrl>
+        <PackageTags>fun; await; string</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="TimeSpanParserUtil" Version="1.2.0" />
+    </ItemGroup>
+
+</Project>
