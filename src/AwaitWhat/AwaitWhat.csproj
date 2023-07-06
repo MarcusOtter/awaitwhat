@@ -13,6 +13,8 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryType>git</RepositoryType>
+        <PackageVersion>1.1.0</PackageVersion>
+        <PackageReleaseNotes>Offset delay from parsing the string</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
